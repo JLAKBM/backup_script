@@ -26,7 +26,7 @@ jobs:
 
       - name: Run tests
         id: run_tests
-        run: pytest > result.log
+        run: python -m pytest > result.log
 
       - name: Send Email on Failure
         if: failure()

@@ -24,9 +24,15 @@ jobs:
         run: |
           pip install pytest
 
+      - name: List files
+        run: ls -la
+
       - name: Run tests
         id: run_tests
         run: python -m pytest > result.log
+
+      - name: List files
+        run: ls -la
 
       - name: Send Email on Failure
         if: failure()

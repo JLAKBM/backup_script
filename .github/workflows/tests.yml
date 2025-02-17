@@ -38,5 +38,5 @@ jobs:
           password: ${{ secrets.MAIL_PASSWORD }}
           subject: "Échec des tests - Backup Script"
           body: "Les tests unitaires ont échoué. Consultez les logs pour plus d'informations."
-          to: juleslqt@gmail.com
+          to: cedric.surquin@gmail.com
           from: "GitHub Actions"
